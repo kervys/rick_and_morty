@@ -1,0 +1,42 @@
+menu {
+    color: gold;
+}
+.barra {
+    background-color: rgb(156, 172, 75);
+    height: 5.5em;
+  }
+.search{
+    display: flex;
+    position: absolute;
+    left: 80%;
+    top: 7%;
+    transform: translate(-100%, -50%);
+}
+.home{
+    text-indent: 15em;
+    display: flex;
+    line-height: 500%;
+}
+
+/* Pantallas de menos de 992px de ancho */
+/* @media (max-width: 992px) {
+	body {
+		background-color: blue;
+	}
+}
+/* Pantallas de menos de 600px de ancho */
+/* @media (max-width: 600px) {
+	body {
+		background-color: black;
+	}
+} */
+
+.contenedorCajas{
+    display: flex;
+    justify-content: center;
+  }
+    @media screen and (max-width: 700px) {
+      .contenedorCajas {
+        display: inline-block;
+      }
+  }

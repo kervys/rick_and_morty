@@ -1,0 +1,72 @@
+@font-face {
+  font-family: rick_and_morty;
+  src: url(../../assets/get_schwifty.ttf);
+}
+
+.card {
+  background-color: #6138e7cb;
+  border: solid #06d6a0;
+  font-family: rick_and_morty;
+  width: 15em;
+  height: 20em;
+  border-radius: 1em;
+  overflow: hidden;
+  margin: 2em;
+  position: relative;
+  box-shadow: 3 0 10px rgba(86, 82, 82, 0.8);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  left: 9;
+}
+
+.card::after {
+  position: absolute;
+  top: 10%;
+  left: -20%;
+  font-size: 9em;
+  font-weight: 10;
+}
+
+.card img {
+  top: 55%;
+  transform: translateY(-65%);
+  z-index: 10000;
+  width: 97%;
+  transition: 0.3s;
+  border-radius: 0.5em;
+  background-color: #50f110cb;
+}
+
+.card:hover img {
+  top: 1%;
+  transform: translateY(0%);
+  opacity: 10;
+  visibility: visible;
+  border-radius:50%;
+  -webkit-border-radius:55%;
+  box-shadow: 0px 0px 15px 15px #141315;
+  -webkit-box-shadow: 0px 0px 15px 15px #d7d5e7;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.card h3 {
+  color: #370617;
+}
+
+.card button {
+  border:   #2ab1e2 solid;
+  border-radius: 0.5em;
+  margin: 0.2em;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: #514378;
+  border-radius: 0.5em;
+  margin: 0.2em;
+  cursor: pointer;
+}
