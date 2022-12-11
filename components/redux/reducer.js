@@ -1,4 +1,4 @@
-import {ADD_FAVORITES, DELETE_FAVORITES} from "../redux/types"
+import {ADD_FAVORITES, DELETE_FAVORITES} from "../redux/types.js"
 
 const initialState = {
     myFavorites: []
